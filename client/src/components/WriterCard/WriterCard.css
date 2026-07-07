@@ -1,0 +1,58 @@
+.writer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-6);
+  height: 100%;
+}
+
+.writer-card-avatar-link {
+  display: block;
+  margin-bottom: var(--space-4);
+  transition: transform var(--transition-fast);
+}
+
+.writer-card-avatar-link:hover {
+  transform: scale(1.05);
+}
+
+.writer-card-avatar {
+  border-width: 3px;
+  border-color: var(--color-border);
+}
+
+.writer-card-name {
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-1);
+}
+
+.writer-card-name a:hover {
+  color: var(--color-coral);
+}
+
+.writer-card-posts {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  color: var(--color-sage);
+  margin-bottom: var(--space-3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.writer-card-bio {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-snug);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-5);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.writer-card-btn {
+  margin-top: auto;
+  width: 100%;
+  justify-content: center;
+}

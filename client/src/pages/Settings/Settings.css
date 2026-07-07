@@ -1,0 +1,122 @@
+.settings-page {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-20);
+}
+
+.settings-header {
+  margin-bottom: var(--space-10);
+}
+
+.settings-back-btn {
+  padding-left: 0;
+  margin-bottom: var(--space-2);
+}
+
+.settings-title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.settings-subtitle {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+}
+
+.settings-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.settings-sidebar-card,
+.settings-main-card {
+  padding: var(--space-8);
+  transition: none; /* remove hover effect */
+}
+.settings-sidebar-card:hover,
+.settings-main-card:hover {
+  transform: none;
+  box-shadow: var(--shadow-card);
+}
+
+.settings-sidebar-card h2,
+.settings-main-card h2 {
+  font-family: var(--font-serif);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-2);
+}
+
+.settings-avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.settings-avatar {
+  border-width: 3px;
+  border-color: var(--color-border);
+}
+
+.avatar-upload-label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--color-border);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  cursor: pointer;
+  background: var(--color-surface-alt);
+  color: var(--color-text);
+  transition: all var(--transition-fast);
+}
+
+.avatar-upload-label:hover {
+  border-color: var(--color-coral);
+  color: var(--color-coral);
+  background: var(--color-coral-light);
+}
+
+.avatar-tip {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.settings-bio-textarea {
+  min-height: 120px;
+}
+
+.settings-save-btn {
+  justify-content: center;
+  align-self: flex-start;
+  min-width: 160px;
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 768px) {
+  .settings-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  .settings-sidebar-card,
+  .settings-main-card {
+    padding: var(--space-6);
+  }
+}

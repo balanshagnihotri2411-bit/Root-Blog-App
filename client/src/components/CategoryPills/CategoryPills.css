@@ -1,0 +1,41 @@
+.category-pills-container {
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  padding: var(--space-2) 0 var(--space-4) 0;
+  margin-bottom: var(--space-8);
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.category-pills-container::-webkit-scrollbar {
+  display: none;
+}
+
+.category-pills-container .pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  text-transform: capitalize;
+  user-select: none;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-xs);
+  background: var(--color-surface-alt);
+  color: var(--color-text-muted);
+  padding: 1px 6px;
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-fast);
+  border: 1px solid var(--color-border);
+}
+
+.pill.active .badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-color: transparent;
+}
